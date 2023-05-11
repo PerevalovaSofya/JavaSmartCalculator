@@ -1,0 +1,102 @@
+.mainWindow{
+    -fx-background-color: bf88ef;
+}
+
+.labelDark{
+-fx-background-color:  #a284e3;
+    -fx-border-color:  #410323;
+    -fx-border-width:  3px;
+    -fx-background-radius: 5;
+    -fx-border-radius:5;
+}
+
+.labelLight{
+-fx-background-color:   #a284e3;
+    -fx-border-color:  #410323;
+    -fx-border-width:  3px;
+    -fx-background-radius: 5;
+    -fx-border-radius:5;
+
+}
+.button{
+    -fx-background-color:  #a284e3;
+    -fx-border-color:  #410323;
+    -fx-border-width:  3px;
+    -fx-background-radius: 5;
+    -fx-border-radius:5;
+}
+.button:pressed{
+    -fx-background-color: #ca98ea;
+    -fx-border-color: #41032352;
+}
+.button:hover{
+    -fx-border-color: #65035287;
+}
+
+.buttonDark{
+    -fx-background-color:  #9861e3;
+    -fx-border-color:  #410323;
+    -fx-border-width:  3px;
+    -fx-background-radius: 5;
+    -fx-border-radius:5;
+}
+
+.buttonDark:pressed{
+    -fx-background-color: #ca98ea;
+    -fx-border-color: #41032352;
+}
+.buttonDark:hover{
+    -fx-border-color: #65035287;
+}
+
+.buttonEqual{
+    -fx-background-color: #ef8cbe;
+    -fx-border-color:  #410323;
+    -fx-border-width:  3px;
+    -fx-background-radius: 5;
+    -fx-border-radius:5;
+}
+
+.buttonEqual:pressed{
+    -fx-background-color: #eeaee1;
+    -fx-border-color: #41032352;
+}
+.buttonEqual:hover{
+    -fx-border-color: #65035287;
+}
+
+.spinner {
+ -fx-border-color:  #410323;
+ -fx-border-width:  3px;
+ -fx-background-color:  cbb5ef;
+ -fx-body-color:  cbb5ef;
+ -fx-base: cbb5ef;
+ -fx-focus-color:  #a284e3;
+}
+.spinner .increment-arrow-button:pressed {
+-fx-background-color: #ca98ea;
+}
+.spinner .decrement-arrow-button:pressed {
+-fx-background-color: #ca98ea;}
+
+.menu-item {
+    -fx-background-color:  #9861e3;
+    -fx-border-color:  #410323;
+
+}
+
+.menu-item:focused {
+     -fx-background-color: #bf88ef;
+}
+
+.context-menu {
+    -fx-background-color: #9861e3;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-background-color: #ef8cbe;
+}
+
+.table-view {
+   -fx-background-color: bf88ef;
+}

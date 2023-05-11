@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="539.0" prefWidth="602.0" style="-fx-background-color: #cbb5ef;" stylesheets="@calculator.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc.Graph">
+   <children>
+      <Spinner fx:id="spinnerXEnd" editable="true" layoutX="408.0" layoutY="451.0" prefHeight="32.0" prefWidth="175.0" style="-fx-border-color: #501675;" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="451.0" prefHeight="32.0" prefWidth="175.0" style="-fx-border-color: #501675;" styleClass="labelLight" text="x axis" textFill="#ebeaea">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinnerXStart" editable="true" layoutX="213.0" layoutY="451.0" prefHeight="32.0" prefWidth="175.0" style="-fx-border-color: #501675;" />
+      <Line endX="228.5" endY="38.0" layoutX="181.0" layoutY="429.0" startX="205.5" startY="38.0" />
+      <Button layoutX="19.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#onBuildGraph" prefHeight="32.0" prefWidth="566.0" style="-fx-border-color: #501675;" text="build graph">
+          <padding>
+              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+          </padding>
+          <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ScatterChart fx:id="scatterChat" layoutX="2.0" layoutY="48.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@calculator.css">
+        <xAxis>
+          <NumberAxis prefHeight="26.0" prefWidth="542.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+      <Pane fx:id="header" layoutY="-1.0" prefHeight="40.0" prefWidth="602.0" style="-fx-background-color: #4b167d; ">
+         <children>
+            <ImageView fx:id="closeButton" fitHeight="16.0" fitWidth="16.0" layoutX="566.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close-button.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="status" alignment="CENTER" layoutX="45.0" layoutY="4.0" prefHeight="32.0" prefWidth="509.0" textAlignment="CENTER" textFill="#ebeaea">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
